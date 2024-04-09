@@ -45,18 +45,18 @@ const Navbar: React.FC = () => {
     }, []);
 
     return (
-        <nav ref={navbarRef} className={"sticky flex flex-col mix-w-fit bg-primary h-screen transition-all duration-200 ease-linear " + (isOpen ? "w-48" : "w-20")}>
+        <nav ref={navbarRef} className={"sticky flex flex-col mix-w-fit bg-secondary h-screen transition-all duration-200 ease-linear " + (isOpen ? "w-48" : "w-16")}>
                 <div className="mx-auto w-full h-full flex flex-col justify-between">
                     <div className="text-center py-5 w-full">
-                        <Logo fill="white" className="inline" onClick={() => {setIsOpen(!isOpen)}} />
+                        <Logo height='40px' width='40px' fill="white" className="inline" onClick={() => {setIsOpen(!isOpen)}} />
                         </div>
-                    <div className="flex flex-col space-y-2 mx-auto ml-3 w-fit mt-7">
+                    <div className="flex flex-col space-y-2 mx-auto ml-1 w-fit mt-7">
                         <Menu src={<Notif />} desc="Notification"/>
                         <Menu src={<Schedule />} desc="Schedule"/>
                         <Menu src={<Fav />} desc="Favorites"/>
                         <Menu src={<Saved />} desc="Saved Anime"/>
                     </div>
-                    <div className="flex flex-col mt-auto pb-5 space-y-2 mx-auto ml-3 w-fit">
+                    <div className="flex flex-col mt-auto pb-5 space-y-2 mx-auto ml-1 w-fit">
                         <Menu src={<Notif />} desc="Settings"/>
                         <Menu src={<Schedule />} desc="Help"/>
                     </div>

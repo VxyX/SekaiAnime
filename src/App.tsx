@@ -5,6 +5,7 @@ import './App.css'
 import MainContent from './MainContent'
 import Navbar from './component/navbar'
 import React from 'react'
+import Header from './component/Header'
 
 class App extends React.Component{
   componentDidMount(): void {
@@ -19,11 +20,11 @@ class App extends React.Component{
     return (<>
     <div className='flex'>
       <Navbar />
-      <div className='max-h-screen flex flex-col w-full'>
+      <div className='max-h-screen flex flex-col w-full overflow-hidden'>
         <div className='flex sticky'>
-          1
+          <Header />
         </div>
-        <div className='overflow-auto'>
+        <div className='overflow-y-scroll -right-5'>
           2<MainContent />
         </div>
         
