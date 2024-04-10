@@ -25,7 +25,7 @@ class App extends React.Component{
           <Header />
         </div>
         <div className='overflow-y-scroll -right-5'>
-          2<MainContent />
+          <MainContent />
         </div>
         
       </div>
