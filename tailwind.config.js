@@ -10,7 +10,9 @@ export default {
         primary: '',
         secondary: 'rgb(206,46,46)',
         lightPrimary: '#292929',
-
+      },
+      fontFamily: {
+        default: ['Poppins', 'sans-serif']
       }
     },
   },

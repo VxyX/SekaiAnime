@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import MainContent from './MainContent'
 import Navbar from './component/navbar'
@@ -20,7 +20,7 @@ class App extends React.Component{
     return (<>
     <div className='flex'>
       <Navbar />
-      <div className='max-h-screen flex flex-col w-full overflow-hidden'>
+      <div className='max-h-screen flex flex-col w-full overflow-hidden font-default'>
         <div className='flex sticky'>
           <Header />
         </div>
