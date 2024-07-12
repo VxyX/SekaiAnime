@@ -31,7 +31,7 @@ export default function Header() {
                         Welcome!,
                     </span>
                     <span className='font-thin text-[11px]'>
-                        Kontol
+                        Kovlol
                     </span>
                 </div>
                 <div className='rounded-full bg-lightPrimary overflow-hidden mr-5'>
